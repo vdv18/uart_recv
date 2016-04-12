@@ -1,0 +1,22 @@
+# clock pins for Basys2 Board
+#NET "clk" LOC = "B8"; # Bank = 0, Signal name = MCLK
+NET "clk" LOC = "M6"; # Bank = 2, Signal name = UCLK
+NET "clk" CLOCK_DEDICATED_ROUTE = FALSE;
+
+
+NET "rxd" LOC = "B2"; # Bank = 1, Signal name = JA1
+NET "errp" LOC = "A3"; # Bank = 1, Signal name = JA2
+NET "errf" LOC = "J3"; # Bank = 1, Signal name = JA3
+NET "outclk" LOC = "B5"; # Bank = 1, Signal name = JA4
+NET "dataready" LOC = "C6";
+NET "reset" LOC = "G12"; # Bank = 0, Signal name = BTN0
+
+# Pin assignment for LEDs
+NET "data<7>" LOC = "G1" ; # Bank = 3, Signal name = LD7
+NET "data<6>" LOC = "P4" ; # Bank = 2, Signal name = LD6
+NET "data<5>" LOC = "N4" ;  # Bank = 2, Signal name = LD5
+NET "data<4>" LOC = "N5" ;  # Bank = 2, Signal name = LD4
+NET "data<3>" LOC = "P6" ; # Bank = 2, Signal name = LD3
+NET "data<2>" LOC = "P7" ; # Bank = 3, Signal name = LD2
+NET "data<1>" LOC = "M11" ; # Bank = 2, Signal name = LD1
+NET "data<0>" LOC = "M5" ;  # Bank = 2, Signal name = LD0
